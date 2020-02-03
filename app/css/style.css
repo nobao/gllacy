@@ -1,0 +1,381 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 19px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #ec593c;
+  background-image: linear-gradient(to bottom, #f26843, #e74a35);
+  border-radius: 45px;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.show-item {
+  visibility: visible;
+}
+
+.hide-item {
+  visibility: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2.3%;
+  min-width: 900px;
+  max-width: 1200px;
+}
+
+.main-header a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.top-line {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  padding-top: 9px;
+  width: 100%;
+}
+
+.main-header .header-logo {
+  margin-right: 10px;
+  width: 154px;
+  height: 64px;
+
+  cursor: pointer;
+}
+
+.main-navigation {
+  position: relative;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main-navigation a {
+  display: block;
+  box-sizing: border-box;
+
+  padding: 7px 14px;
+}
+
+.main-navigation > li > a {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-navigation > li > a:hover,
+.main-navigation > li > a:focus,
+.main-navigation > li:hover > a {
+  color: #323232;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.main-navigation > li > a:active {
+  box-shadow: 0px 2px 1px 0px rgba(105, 105, 105, 1) inset;
+}
+
+.main-navigation > li > a.active {
+  color: #ffffff;
+
+  background-color: #d07058;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.main-navigation > li + li {
+  margin-left: 28px;
+}
+
+.catalog-navigation-link {
+  position: relative;
+}
+
+.main-navigation .catalog-navigation-link:hover > ul,
+.main-navigation .catalog-navigation-link a:focus + ul,
+.catalog-navigation-link:focus-within > ul {
+  visibility: visible;
+}
+
+.catalog-navigation {
+  visibility: hidden;
+
+  position: absolute;
+  top: 37px;
+  left: -6px;
+  
+  margin: 0;
+  padding: 12px 0 6px;
+  width: 143px;
+
+  color: #323232;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.catalog-navigation-link > a {
+  position: relative;
+  z-index: 2;
+}
+
+.absolute-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 40px;
+}
+
+.catalog-navigation a {
+  display: block;
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  margin-top: 6px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+
+  color: #323232;
+}
+
+.catalog-navigation a:hover,
+.catalog-navigation a:focus {
+  background-color: #fbded7;
+}
+
+.catalog-navigation a:active {
+  background-color: #f6b5a5;
+}
+
+.catalog-navigation a.active {
+  color: #ffffff;
+
+  background-color: #d07058;
+}
+
+.catalog-navigation .catalog-navigation-title {
+  padding-bottom: 12px;
+  padding-left: 14px;
+  margin-left: 6px;
+  margin-right: 9px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+
+  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+.search-form {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+ 
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.search-form:hover {
+  background-color: #f8f7f4;
+}
+
+.search-form:hover svg path {
+  fill: #000000;
+}
+
+.search-form form {
+  visibility: hidden;
+
+  position: absolute;
+  top: 37px;
+  right: 0;
+
+  padding: 20px 15px;
+  width: 340px;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
+.search-form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px 14px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #323232;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.search-form input::placeholder {
+  color: #999999;
+}
+
+.search-form:hover form,
+.search-form:focus form,
+.search-form:focus-within form {
+  visibility: visible;
+}
+
+.login-link-wrapper {
+  position: relative;
+}
+
+.login-link {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  width: 92px;
+  padding: 8px 16px 8px 43px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login-link svg {
+  position: absolute;
+  left: 16px;
+  top: 6px;
+
+  width: 20px;
+  height: 19px;
+}
+
+.login-link svg g {
+  fill: #ffffff;
+}
+
+.login-link:hover,
+.login-link:focus {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.login-link:hover svg g,
+.login-link:focus svg g {
+  fill: #373737;
+}
+
+.login-link:hover + form,
+.login-link:focus + form,
+.login-link:focus-within + form {
+  visibility: visible;
+}
+
+.login-form {
+  position: absolute;
+  top: 38px;
+  right: 0;
+
+  display: flex;
+  flex-flow: column;
+  width: 277px;
+  padding: 20px 18px 22px;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  box-sizing: border-box;
+  padding-left: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #323232;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.login-form input[type="email"]::placeholder,
+.login-form input[type="password"]::placeholder {
+  color: #999999;
+}
+
+.bottom-line-wrapper {
+  display: flex;
+}
+
+.login-form .button {
+  border: none;
+
+  cursor: pointer;
+}
