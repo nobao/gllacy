@@ -72,6 +72,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0 2.3%;
   min-width: 900px;
@@ -617,12 +618,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .slider .slider-items-wrapper {
   position: relative;
 
-  margin-bottom: 38px;
+  margin-bottom: 30px;
   width: 680px;
 }
 
@@ -698,4 +700,56 @@ input[type="radio"].visually-hidden {
 
 .slider-dots > li + li {
   margin-left: 8px;
+}
+
+.banners {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-item {
+  box-sizing: border-box;
+  width: 48.85%;
+  padding: 20px;
+
+  background-color: #a10118;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 15px;
+}
+
+.banner-1 {
+  background-image: url("../img/raspberry-layout.jpg");
+}
+
+.banner-2 {
+  background-image: url("../img/chocolate-layout.jpg");
+}
+
+.banner-item h3 {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banner-item p {
+  margin: 0;
+  margin-bottom: 43px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.banner-item .button {
+  float: right;
+
+  padding-right: 24px;
+  padding-left: 24px;
 }
