@@ -704,8 +704,10 @@ input[type="radio"].visually-hidden {
 
 .banners {
   position: relative;
+  
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .banner-item {
@@ -744,6 +746,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   font-size: 18px;
+  font-weight: 700;
   line-height: 22px;
 }
 
@@ -752,4 +755,105 @@ input[type="radio"].visually-hidden {
 
   padding-right: 24px;
   padding-left: 24px;
+}
+
+.hits {
+  margin-bottom: 40px;
+}
+
+.hits-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.catalog-item {
+  position: relative;
+
+  width: 23.27%;
+  text-align: center;
+}
+
+.catalog-item figure {
+  margin: 0;
+}
+
+.catalog-item figcaption {
+  margin-top: 15px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-item p {
+  position: absolute;
+  top: 214px;
+  left: 0;
+
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.catalog-item p span {
+  font-size: 30px;
+}
+
+.hit::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/hit.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  border-radius: 32px;
+}
+
+.catalog-item .button {
+  display: none;
+  box-sizing: border-box;
+
+  position: relative;
+  
+  margin-top: 18px;
+  padding-right: 17px;
+  padding-left: 17px; 
+}
+
+.catalog-item .overlay {
+  display: none;
+
+  position: absolute;
+  top: -6px;
+  left: -10px;
+  right: -10px;
+  bottom: -20px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 5px;
+}
+
+.catalog-item:hover .overlay {
+  display: block;
+}
+
+.catalog-item:hover .button {
+  display: inline-block;
 }
