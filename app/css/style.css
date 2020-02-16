@@ -857,3 +857,79 @@ input[type="radio"].visually-hidden {
 .catalog-item:hover .button {
   display: inline-block;
 }
+
+.about {
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  color: #323232;
+
+  background-color: #eee2c8;
+  background-image: url("../img/pattern-about.jpg");
+  border-radius: 15px;
+}
+
+.about h2 {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.about p {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 56px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.about p::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: 0;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/ice-cream.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.about p.two::before {
+  background-image: url("../img/eco.svg");
+}
+
+.about p.three::before {
+  background-image: url("../img/cow.svg");
+}
+
+.about p.four::before {
+  background-image: url("../img/thermometer.svg");
+}
+
+.about p + p {
+  margin-top: 22px;
+}
+
+.about .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .left-column,
+.about .right-column {
+  flex-basis: 48.8%;
+}
