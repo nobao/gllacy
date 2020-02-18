@@ -863,6 +863,7 @@ input[type="radio"].visually-hidden {
   padding-right: 1.7%;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-bottom: 40px;
 
   color: #323232;
 
@@ -932,4 +933,130 @@ input[type="radio"].visually-hidden {
 .about .left-column,
 .about .right-column {
   flex-basis: 48.8%;
+}
+
+.sections-wrapper {
+  position: relative;
+  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.blog-news,
+.mailing {
+  box-sizing: border-box;
+  width: 48.85%;
+  
+  border-radius: 15px;
+}
+
+.blog-news {
+  padding-top: 25px;
+  padding-left: 20px;
+
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: url("../img/strawberry-layout.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.blog-news h2 {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.blog-news a {
+  display: block;
+  max-width: 290px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: inherit;
+
+  text-decoration: underline;
+}
+
+.mailing {
+
+  background-color: #f8f7f4;
+  background-image: repeating-linear-gradient(-45deg, #92cdff 0, #92cdff 7px, #f8f7f4 7px, #f8f7f4 14px, #fe9e90 14px, #fe9e90 21px, #f8f7f4 21px, #f8f7f4 28px);
+  background-origin: border-box;
+  background-position: -8px 0;
+  border: 5px solid transparent;
+}
+
+.mailing .layout {
+  padding: 15px 21px 35px;
+  width: auto;
+  height: auto;
+
+  background-color: #f8f7f4;
+
+  border-radius: 15px;
+}
+
+.mailing p {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+
+  background-color: #f8f7f4;
+
+}
+
+.mailing form {
+  display: flex;
+
+}
+
+.mailing #user-mail {
+  flex: 1;
+  padding-left: 13px;
+  padding-right: 10px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.mailing #user-mail:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.mailing #user-mail::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #999999;
+}
+
+.mailing .button {
+  margin-left: 12px;
+
+  color: #fefefe;
+
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
