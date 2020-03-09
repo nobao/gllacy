@@ -257,41 +257,48 @@
       </ul>
   
       <nav class="production-navigation">
-        <ul>
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
+        <div class="left-column">
+          <a href="#">Для поставщиков</a>
+          <a href="#">О производстве</a>
+        </div>
+        <div class="right-column">
+          <a href="#">Наши документы</a>
+          <a href="#">Экологические стандарты</a>
+        </div>       
       </nav>
   
       <div class="copyright">
-        <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="38"></a>
-        <span>Сделано в 
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-          © 2017
-        </span>
+        <div class="wrapper">
+          <a class="logo-html-academy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="38"></a>
+          <span>Сделано в 
+            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            © 2017
+          </span>
+        </div>        
       </div>
       
     </footer>
   </div>
   
-
-  <section class="modal feedback-modal">
-    <h2 class="visually-hidden">Форма обратной связи</h2>
-    <p>Мы обязательно вам ответим!</p>
-
-    <form action="https://echo.htmlacademy.ru/">
-      <label class="visually-hidden" for="user-name">Ваше имя</label>
-      <input type="text" name="name" id="user-name" placeholder="Как вас зовут?">
-      <label class="visually-hidden" for="user-email">Ваша электронная почта</label>
-      <input type="email" name="email" id="user-email" placeholder="Ваша почта для ответа?">
-      <label class="visually-hidden" for="user-message">Ваше сообщение</label>
-      <textarea name="message" id="user-message" placeholder="Напишите что-нибудь..."></textarea>
-      <input type="submit" value="Отправить">
-    </form>
-    <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
-  </section>
+  <div class="modal">
+    <div class="overlay">
+      <section class="feedback-modal">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <p>Мы обязательно вам ответим!</p>
+    
+        <form action="https://echo.htmlacademy.ru/">
+          <label class="visually-hidden" for="user-name">Ваше имя</label>
+          <input type="text" name="name" id="user-name" placeholder="Как вас зовут?">
+          <label class="visually-hidden" for="user-email">Ваша электронная почта</label>
+          <input type="email" name="email" id="user-email" placeholder="Ваша почта для ответа?">
+          <label class="visually-hidden" for="user-message">Ваше сообщение</label>
+          <textarea name="message" id="user-message" placeholder="Напишите что-нибудь..."></textarea>
+          <input class="button" type="submit" value="Отправить">
+        </form>
+        <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+      </section>
+    </div>
+  </div>  
   
 </body>
 </html>
