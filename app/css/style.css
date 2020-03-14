@@ -1,12 +1,31 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1200px;
+  min-width: 900px;
 
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: #ffffff;
+  color: #ffffff;  
+}
 
+body.body-slider-1 {
   background-color: #849d8f;
+  background-image: url("../img/flash-light-1.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+body.body-slider-2 {
+  background-color: #8996a6;
+  background-image: url("../img/flash-light-2.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+body.body-slider-3 {
+  background-color: #9d8b84;
+  background-image: url("../img/flash-light-3.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -621,6 +640,17 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
 }
 
+.slider::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1045px;
+  height: 881px;
+}
+
 .slider .slider-items-wrapper {
   position: relative;
 
@@ -792,9 +822,13 @@ input[type="radio"].visually-hidden {
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
+.image-wrapper {
+  position: relative;
+}
+
 .catalog-item p {
   position: absolute;
-  top: 214px;
+  bottom: 5.25%;
   left: 0;
 
   margin: 0;
@@ -814,6 +848,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 
   width: 61px;
   height: 61px;
@@ -959,7 +994,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   background-image: url("../img/strawberry-layout.jpg");
-  background-size: contain;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: top right;
 }
