@@ -125,9 +125,9 @@
         <a href="#" class="button">Давайте оба!</a>
   
         <ul class="slider-dots">
-          <li class="slider-dot-1 active"></li>
-          <li class="slider-dot-2"></li>
-          <li class="slider-dot-3"></li>
+          <li class="slider-dot slider-dot-1 active"></li>
+          <li class="slider-dot slider-dot-2"></li>
+          <li class="slider-dot slider-dot-3"></li>
         </ul>
       </section>
   
@@ -235,9 +235,10 @@
 
     <section class="map">
       <h2 class="visually-hidden">Схема проезда к магазину Gllacy</h2>
-      <img src="/img/map.jpg" alt="Схема проезда к магазину Gllacy по адресу город Санкт-Петербург, улица Большая Конюшенная дом 19/8" width="1200" height="430">
+      <img src="img/map.jpg" alt="Схема проезда к магазину Gllacy по адресу город Санкт-Петербург, улица Большая Конюшенная дом 19/8" width="1200" height="430">
 
       <div class="wrapper">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CKa0II-V" frameborder="1" allowfullscreen="true"></iframe>
         <div class="container">
           <div class="contact-details">
             <p>Адрес главного офиса
@@ -248,7 +249,7 @@
               <span class="tel">8 812 450-25-25</span>
               (с 10 до 20 ежедневно)
             </p>
-            <a class="button" href="#">Форма обратной связи</a>
+            <a class="button feedback-button" href="#">Форма обратной связи</a>
           </div>
         </div>    
       </div>        
@@ -288,7 +289,7 @@
     </footer>
   </div>
   
-  <div class="modal">
+  <div class="modal none-item">
     <div class="overlay">
       <section class="feedback-modal">
         <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -307,6 +308,8 @@
       </section>
     </div>
   </div>  
+
+  <script src="js/script.js"></script>
   
 </body>
 </html>
