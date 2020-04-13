@@ -104,17 +104,17 @@
         <li><a>Сливочное</a></li>
       </ul>
 
-      <h1>Сливочное мороженое</h1>
+      <h1 class="h1">Сливочное мороженое</h1>
 
       <section class="filters">
 
         <h2 class="visually-hidden">Фильтры и сортировка</h2>
 
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         
           <fieldset>
             <legend>Сортировка:</legend>
-            <select name="sorting" id="sorting">
+            <select class="background-layer" name="sorting" id="sorting">
               <option value="popular">по популярности</option>
               <option value="cheap">сначала недорогие</option>
               <option value="expensive">сначала дорогие</option>
@@ -124,37 +124,45 @@
 
           <fieldset>
             <legend>Цена: 100 руб. – 500 руб.</legend>
-            <div class="min-price"></div>
-            <div class="max-price"></div>
+            <div class="price background-layer">
+              <div class="price-level">
+                <div class="price-value min-price"></div>
+                <div class="price-value max-price"></div>
+              </div>              
+            </div>            
           </fieldset>
 
           <fieldset>
             <legend>Жирность:</legend>
-            <input type="radio" name="fat" id="0%-fat" value="0%">
-            <label for="0%-fat">0%</label>
-            <input type="radio" name="fat" id="10%-fat" value="1%-10%" checked>
-            <label for="10%-fat">до 10%</label>
-            <input type="radio" name="fat" id="under-30%-fat" value="11%-30%">
-            <label for="under-30%-fat">до 30%</label>
-            <input type="radio" name="fat" id="more-than-30%-fat" value="31%-">
-            <label for="more-than-30%-fat">выше 30%</label>
+            <div class="background-layer">
+              <input type="radio" name="fat" id="0%-fat" value="0%">
+              <label for="0%-fat">0%</label>
+              <input type="radio" name="fat" id="10%-fat" value="1%-10%" checked>
+              <label for="10%-fat">до 10%</label>
+              <input type="radio" name="fat" id="under-30%-fat" value="11%-30%">
+              <label for="under-30%-fat">до 30%</label>
+              <input type="radio" name="fat" id="more-than-30%-fat" value="31%-">
+              <label for="more-than-30%-fat">выше 30%</label>
+            </div>          
           </fieldset>
 
           <fieldset>
             <legend>Наполнители:</legend>
-            <input type="checkbox" name="filler" id="chocolate" value="chocolate">
-            <label for="chocolate">шоколадные</label>
-            <input type="checkbox" name="filler" id="sugar" value="sugar">
-            <label for="sugar">сахарные присыпки</label>
-            <input type="checkbox" name="filler" id="fruit" value="fruit">
-            <label for="fruit">фрукты</label>
-            <input type="checkbox" name="filler" id="syrup" value="syrup">
-            <label for="syrup">сиропы</label>
-            <input type="checkbox" name="filler" id="jam" value="jam">
-            <label for="jam">джемы</label>
+            <div class="background-layer">
+              <input type="checkbox" name="filler" id="chocolate" value="chocolate">
+              <label for="chocolate">шоколадные</label>
+              <input type="checkbox" name="filler" id="sugar" value="sugar">
+              <label for="sugar">сахарные присыпки</label>
+              <input type="checkbox" name="filler" id="fruit" value="fruit">
+              <label for="fruit">фрукты</label>
+              <input type="checkbox" name="filler" id="syrup" value="syrup">
+              <label for="syrup">сиропы</label>
+              <input type="checkbox" name="filler" id="jam" value="jam">
+              <label for="jam">джемы</label>
+            </div>           
           </fieldset>
 
-          <button type="submit">Применить</button>
+          <button class="background-layer" type="submit">Применить</button>
         
         </form>
 
