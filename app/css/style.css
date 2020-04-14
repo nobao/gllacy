@@ -1615,6 +1615,11 @@ select.background-layer {
   background-repeat: no-repeat;
 }
 
+select.background-layer:hover {
+  color: #323232;
+
+  background-image: url("../img/triangle-black.svg");
+}
 
 select.background-layer:focus {
   color: #323232;
@@ -1653,6 +1658,7 @@ select.background-layer option {
   background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }
 
 .min-price {
@@ -1661,4 +1667,59 @@ select.background-layer option {
 
 .max-price {
   left: 111px;
+}
+
+.fat.background-layer {
+  display: flex;
+  justify-content: space-between;
+  width: 417px;
+  padding: 7px 16px 7px 14px;
+}
+
+.fat label {
+  padding-left: 32px;
+
+  line-height: 22px;
+
+  background-image: url("../img/radio-off.svg");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+}
+
+.fat input:checked + label {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filler.background-layer {
+  display: flex;
+  justify-content: space-between;
+  width: 702px;
+  padding: 8px 19px 8px 15px;
+}
+
+.filler label {
+  padding-left: 32px;
+
+  line-height: 20px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.filler input:checked + label {
+  background-image: url("../img/checkbox-on.svg");
+  background-size: 23px;
+}
+
+.filter-form button.background-layer {
+  padding: 7px 28px;
+  align-self: flex-end;
+
+  line-height: 18px;
+
+  border: 2px solid #fcfcfc;
+  cursor: pointer;
 }
