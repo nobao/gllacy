@@ -85,6 +85,7 @@ let feedbackModal = modal.querySelector('.feedback-modal');
 modalClose.addEventListener('click', function(evt) {
     evt.preventDefault();
     feedbackModal.classList.remove('show-animation');
+    feedbackModal.classList.remove('error-animation');
     feedbackModal.classList.add('hide-animation');
     setTimeout(function(){
         modal.classList.remove('block-item');
@@ -99,6 +100,7 @@ feedbackModal.addEventListener('click', function(evt) {
 modalOverlay.addEventListener('click', function(evt) {
     evt.preventDefault();
     feedbackModal.classList.remove('show-animation');
+    feedbackModal.classList.remove('error-animation');
     feedbackModal.classList.add('hide-animation');
     setTimeout(function(){
         modal.classList.remove('block-item');
@@ -110,6 +112,7 @@ window.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 27) {
         evt.preventDefault();
         feedbackModal.classList.remove('show-animation');
+        feedbackModal.classList.remove('error-animation');
         feedbackModal.classList.add('hide-animation');
         setTimeout(function(){
             modal.classList.remove('block-item');
